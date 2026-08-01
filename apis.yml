@@ -1,8 +1,24 @@
 aid: rabotenergy
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/rabotenergy.png
 name: rabot.energy
-description: 'rabot.energy is a company surfaced as a portfolio company of hv-capital and added to the
-  API Evangelist network as a stub for enrichment. Sector: consumer. This profile is a lead awaiting the
-  enrichment pipeline.'
+description: 'rabot.energy (RABOT Energy DE GmbH) is a Hamburg-based German electricity supplier
+  offering dynamic and fixed-rate power tariffs where consumers pay hourly rates that track the
+  wholesale electricity market. The company provides 100% renewable energy certified by TÜV NORD,
+  smart meter installation and management, EV charging optimization (Autostrom), and home battery
+  storage (Rabot Flow), all managed through a consumer mobile app for consumption monitoring. It is
+  a consumer-facing energy retailer; no public developer portal or API is currently published. Added
+  to the API Evangelist network as a portfolio company of HV Capital.'
 url: https://raw.githubusercontent.com/api-evangelist/rabotenergy/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -12,13 +28,45 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-20'
 tags:
 - Company
 - Consumer
+- Energy
+- Electricity
+- Utilities
+- Renewable Energy
+- Smart Meter
+- EV Charging
+- Germany
+- Dynamic Pricing
 apis: []
+common:
+- type: DomainSecurity
+  url: security/rabotenergy-domain-security.yml
+- type: Website
+  url: https://rabot.energy/
+- type: Blog
+  url: https://rabot.energy/magazin
+- type: TermsOfService
+  url: https://rabot.energy/agb
+- type: PrivacyPolicy
+  url: https://rabot.energy/datenschutzerklaerung
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-20'
+  status: enriched
+  artifacts_added: 1
+  pass: local-v1
+x-legal:
+  entity: RABOT Energy DE GmbH
+  address: Hopfenmarkt 33, 20457 Hamburg, Germany
+  register: Amtsgericht Hamburg, HRB 194021
+  vat_id: DE456756851
+  managing_directors:
+  - Jan Rabe
+  - Dr. Konrad Schade
